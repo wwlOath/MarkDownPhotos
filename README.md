@@ -605,3 +605,133 @@
 
 ### 1、PathwayComparator
 ![image](https://github.com/wwlOath/MarkDownPhotos/blob/master/17.png?raw=true)
+
+### 7.1.1 URL
+    getPathwayJsonData
+### 7.1.2 参数
+    pathwayId: 'hsa05224'
+### 7.1.3 成功时返回
+    {
+	    "pathwayGeneSymbols": ",IGF1R,TCF7L1,FGF4,GRB2,FGF14,FGFR1,FGF13,WNT11,FGF10,HES5,NRAS,CDK6,WNT16,FGF5,WNT3A,FZD3,FGF1,FGF11,FGF23,LRP6,CCND1,FGF22,PIK3R5,NOTCH3,EGF,NOTCH4,KRAS,DLL1,FGF16,FZD1,AKT1,ESR2,TCF7,DLL3,FLT4,MAPK1,JAG1,WNT7A,FZD5,DVL2,FGF18,DVL3,AXIN2,PIK3R1,CSNK1A1L,FGF3,MYC,PIK3CG,PIK3CA,PIK3R2,APC,FZD10,HEYL,FZD8,AKT3,EGFR,JAG2,HRAS,WNT9A,HES1,SHC1,MAP2K2,LRP5,WNT5B,ERBB2,JUN,FZD6,NOTCH1,WNT5A,FGF6,WNT1,E2F2,BRAF,PGR,WNT2B,LEF1,FGF8,FZD4,ESR1,DVL1,FGF12,SP1,FGF7,TNFSF11,CDK4,PIK3CB,FRAT2,CTNNB1,BRCA2,KIT,RPS6KB2,RAF1,FGF9,TCF7L2,RPS6KB1,PTEN,CDKN1A,SOS2,NCOA3,SHC3,PIK3CD,ARAF,WNT7B,APC2,NOTCH2,RB1,FGF2,FZD2,BRCA1,WNT10A,MAP2K1,FZD7,FGF21,SOS1,WNT10B,CSNK1A1,WNT8A,AKT2,WNT9B,FGF19,WNT8B,WNT2,PIK3R3,E2F3,NFKB2,GSK3B,WNT6,E2F1,TP53,SHC2,WNT3,NCOA1,HEY2,FZD9,FOS,MTOR,MAPK3,IGF1,AXIN1,FGF20,FGF17,FRAT1,WNT4,SHC4,HEY1,DLL4,",
+	    "pathwayId": "hsa05224",
+	    "pathwayName": "Breast cancer",
+	    "pathwayDescription": "Breast cancer is the leading cause of cancer death among women worldwide. The vast majority of breast cancers are carcinomas that originate from cells lining the milk-forming ducts of the mammary gland. The molecular subtypes of breast cancer, which are based on the presence or absence of hormone receptors (estrogen and progesterone subtypes) and human epidermal growth factor receptor-2 (HER2), include: hormone receptor positive and HER2 negative (luminal A subtype), hormone receptor positive and HER2 positive (luminal B subtype), hormone receptor negative and HER2 positive (HER2 positive), and hormone receptor negative and HER2 negative (basal-like or triple-negative breast cancers (TNBCs)). Hormone receptor positive breast cancers are largely driven by the estrogen/ER pathway. In HER2 positive breast tumours, HER2 activates the PI3K/AKT and the RAS/RAF/MAPK pathways, and stimulate cell growth, survival and differentiation. In patients suffering from TNBC, the deregulation of various signalling pathways (Notch and Wnt/beta-catenin), EGFR protein have been confirmed. In the case of breast cancer only 8% of all cancers are hereditary, a phenomenon linked to genetic changes in BRCA1 or BRCA2. Somatic mutations in only three genes (TP53, PIK3CA and GATA3) occurred at >10% incidence across all breast cancers.",
+	    "pathwayGeneInfo": {
+	        "imageParameters": [
+	            {
+	                "width": "46",
+	                "symbol": "IGF1",
+	                "entrez": "3479",
+	                "type": "rectangle",
+	                "y": "814",
+	                "id": "66",
+	                "height": "17",
+	                "x": "217",
+	            },
+	            {
+	                "x": "325",
+	                "y": "1017",
+	                "id": "88",
+	                "height": "17",
+	                "type": "rectangle",
+	                "width": "46",
+	                "symbol": "LRP6_LRP5",
+	                "entrez": "4040_4041"
+	            }, 
+	            ...
+	       ],
+	       "width": "1524",
+	       "height": "1107"
+	    },
+	    "pathwayMapInfo": {
+	        "width": "1524",
+	        "imageParameters": [
+	            {
+	                "type": "roundrectangle",
+	                "name": "Homologous recombination",
+	                "width": "128",
+	                "x": "1337",
+	                "height": "34",
+	                "y": "805",
+	                "id": "03440"
+	            }, 
+	            {
+	                "name": "TITLE:Breast cancer",
+	                "width": "165",
+	                "type": "roundrectangle",
+	                "id": "05224",
+	                "y": "58",
+	                "height": "25",
+	                "x": "123"
+	            }, 
+	            ...
+	       ],
+	       "height": "1107"
+	    },
+	    "pathwayReference": [
+	        {
+	            "TITLE": "Estrogen receptor-positive breast cancer molecular signatures and therapeutic potentials (Review).",
+	            "AUTHORS": "Zhang MH, Man HT, Zhao XD, Dong N, Ma SL",
+	            "PMID": "24649067",
+	            "JOURNAL": "Biomed Rep 2:41-52 (2014)"
+	        }, 
+	        {
+	            "JOURNAL": "J Cancer 7:1281-94 (2016)",
+	            "PMID": "27390604",
+	            "TITLE": "Cancer Hallmarks, Biomarkers and Breast Cancer Molecular Subtypes.",
+	            "AUTHORS": "Dai X, Xiang L, Li T, Bai Z"
+	        }, 
+	        ...
+	     ],
+	     "pathwayDisease": [
+	        {
+	            "name": "Breast cancer",
+	            "diseaseId": "H00031",
+	            "reference": [
+	                {
+	                    "TITLE": "Molecular genetics of breast cancer progression.",
+	                    "AUTHORS": "Ingvarsson S.",
+	                    "PMID": "10448115",
+	                    "JOURNAL": "Semin Cancer Biol 9:277-88 (1999)"
+	                }, 
+	                {
+	                    "JOURNAL": "Maturitas 49:34-43 (2004)",
+	                    "AUTHORS": "Kenemans P, Verstraeten RA, Verheijen RH.",
+	                    "TITLE": "Oncogenic pathways in hereditary and sporadic breast cancer.",
+	                    "PMID": "15351094"
+	                }, 
+	                ...
+	            ],
+	            "gene": {
+	                "entrez": ["5925", "675", "5728", "672", "999", "4609", "2064", "7157", "595"],
+	                "symbol": ["RB1", "BRCA2", "PTEN", "BRCA1", "CDH1", "MYC", "ERBB2", "TP53", "CCND1"],
+	                "description": {
+	                    "entrez": {
+	                        "2064": "ERBB2 (overexpression)",
+	                        "4609": "c-MYC (overexpression)",
+	                        "675": "BRCA2 (germline mutation)",
+	                        "999": "CDH1 (mutation)",
+	                        "7157": "p53 (mutation)",
+	                        "672": "BRCA1 (germline mutation, hypermethylation)",
+	                        "595": "CCND1 (overexpression)",
+	                        "5728": "PTEN (germline mutation)",
+	                        "5925": "RB1 (underexpression)"
+	                    },
+	                    "symbol": {
+	                        "ERBB2": "ERBB2 (overexpression)",
+	                        "MYC": "c-MYC (overexpression)",
+	                        "CDH1": "CDH1 (mutation)",
+	                        "BRCA1": "BRCA1 (germline mutation, hypermethylation)",
+	                        "TP53": "p53 (mutation)",
+	                        "BRCA2": "BRCA2 (germline mutation)",
+	                        "CCND1": "CCND1 (overexpression)",
+	                        "PTEN": "PTEN (germline mutation)",
+	                        "RB1": "RB1 (underexpression)"
+	                    }
+	                }
+	            },
+	            "ICD-10": "C50"
+	        }
+	   ],
+	   "pathwayDrug": []
+    }
