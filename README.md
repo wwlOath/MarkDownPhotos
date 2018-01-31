@@ -788,3 +788,66 @@
         },
         ...
     }
+### 7.5.1 URL
+    getPathwayGeneInfo
+### 7.5.2 参数
+    pathwayId: 'hsa05224',
+### 7.5.3 成功时返回
+    {
+        182: {
+            geneDescription: 'The jagged 1 protein encoded by JAG1 is the human homolog of the Drosophilia jagged protein.  Human jagged 1 is the ligand for the receptor notch 1, the latter a human homolog of the Drosophilia jagged receptor notch.  Mutations that alter the jagged 1 protein cause Alagille syndrome.  Jagged 1 signalling through notch 1 has also been shown to play a role in hematopoiesis. [provided by RefSeq, Jul 2008]',
+            geneSymbol: 'JAG1',
+            isImmunome: '',
+            isOncogene: '',
+            isSecretome: '',
+            isSurfaceome： 'Y',
+            isTranscriptionFactor: '',
+            isTumorSuppressor: '',
+        },
+         207: {
+            geneDescription: 'The serine-threonine protein kinase encoded by the AKT1 gene is catalytically inactive in serum-starved primary and immortalized fibroblasts. AKT1 and the related AKT2 are activated by platelet-derived growth factor. The activation is rapid and specific, and it is abrogated by mutations in the pleckstrin homology domain of AKT1. It was shown that the activation occurs through phosphatidylinositol 3-kinase. In the developing nervous system AKT is a critical mediator of growth factor-induced neuronal survival. Survival factors can suppress apoptosis in a transcription-independent manner by activating the serine/threonine kinase AKT1, which then phosphorylates and inactivates components of the apoptotic machinery. Mutations in this gene have been associated with the Proteus syndrome. Multiple alternatively spliced transcript variants have been found for this gene. [provided by RefSeq, Jul 2011]',
+            geneSymbol: 'AKT1',
+            isImmunome: '',
+            isOncogene: 'Y',
+            isSecretome: '',
+            isSurfaceome： '',
+            isTranscriptionFactor: '',
+            isTumorSuppressor: '',
+        },
+        ...
+    }
+
+### 7.6.1 URL
+    getPathwayConsistentGeneRelations
+### 7.6.2 参数
+    pathwayId: 'hsa05224',
+### 7.6.3 成功时返回
+    {
+        hsa05224: [
+            {
+                downGeneEntrez: '595',
+                downGeneSymbol: 'CCND1',
+                downMapRect: '105',
+                geneRelation: 'expression',
+                geneRelationType: 'activation',
+                pathwayId: 'hsa05224',
+                pathwayName: 'Breast cancer',
+                upGeneEntrez: '2099',
+                upGeneSymbol: 'ESR1',
+                upMapRect: '33',
+            },
+            {
+                downGeneEntrez: '595',
+                downGeneSymbol: 'CCND1',
+                downMapRect: '105',
+                geneRelation: 'expression',
+                geneRelationType: 'activation',
+                pathwayId: 'hsa05224',
+                pathwayName: 'Breast cancer',
+                upGeneEntrez: '2100',
+                upGeneSymbol: 'ESR2',
+                upMapRect: '33',
+            },
+            ...
+        ]
+    }
