@@ -735,3 +735,56 @@
 	   ],
 	   "pathwayDrug": []
     }
+### 7.2.1 URL
+    getPathwayGeneRelatedmiRNA
+### 7.2.2 参数
+    pathwayId: 'hsa05224'
+### 7.2.3 成功时返回
+    {
+        hsa-let-7a-5p: ["1021", "1026", "1869", "1870", "1956", "3265", "3845", "4609", "4893"],
+        hsa-let-7b-5p: ["1021", "208", "3265", "3480", "4893", "595"],
+        hsa-let-7c-5p: ["2475", "3480", "4609", "4893"],
+        hsa-let-7e-5p: ["3479", "3480", "595", "7471"],
+        hsa-let-7f-5p: ["595"],
+        hsa-let-7g-5p: ["208", "3845", "4609"],
+        hsa-let-7i-5p: ["3479"],
+        hsa-miR-1-3p: ["4854", "5290", "6667", "8324"],
+        hsa-miR-7-5p: ["1956", "3480", "5293", "5294", "5894", "8503"],
+        ...
+    }
+### 7.3.1 URL
+    getUserAccessableDataset
+### 7.3.2 参数
+    无参数
+### 7.3.3 成功时返回
+    {
+        "header": {
+            "message": "success",
+            "statusCode": 200
+        },
+        "content": {
+            "userDataset": [],
+            "publicDataset": ["DRNASTAD0178", "DRNACC0160", "DRNACRC0077", "DRNACRC0150", "DRNAESAC0173", "DRNAESCC0172", "DWXSCRC0154", "DRNAESCC0162", "DRNAESCC0163", "DWXSGC0181", "DRNACRC0080", "DWXSCRC0108", "DWXSCRC0154_PC", "DWXSGC0176", "DWXSSTAD0179"]
+        }
+    }
+### 7.4.1 URL
+    getPathwayGeneOdcInfo
+### 7.4.2 参数
+    pathwayId: 'hsa05224',
+    specimens: '',
+### 7.4.3 成功时返回
+    {
+        WNT1： {
+            entrezGeneId: '7471',
+            simpleMutation: ["14:105238592:CTGAG:-", "14:105238604:C:T", "14:105239192:T:C", "14:105242228:T:C",…],
+        },
+        AKT1： {
+            entrezGeneId: '207',
+            simpleMutation: ["14:105238592:CTGAG:-", "14:105238604:C:T", "14:105239192:T:C", "14:105242228:T:C",…],
+        },
+        AKT2: {
+            entrezGeneId: '208',
+            simpleMutation: ["19:40739513:A:G", "19:40739721:G:T", "19:40742320:T:C", "19:40760086:G:-", "19:40769674:G:A",…],
+        },
+        ...
+    }
