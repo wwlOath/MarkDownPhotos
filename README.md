@@ -106,7 +106,38 @@
             "a7b0f0da-4dbe-4a32-991e-47ad3bb27bcf":["0.8","runing","run correlation analysis"]
         }
     }
-    
+
+![image](https://github.com/wwlOath/MarkDownPhotos/blob/master/19.png?raw=true)
+### 1.2.1 URL
+    updateAnalysisForRegulatorPathNet
+### 1.2.2 参数
+     {
+        appId: 'RegulatorPathNet',
+        appName: 'RegulatorPathNet',
+        analysisId: 'a7b0f0da-4dbe-4a32-991e-47ad3bb27bcf',
+        analysisName: 'ddddd',
+        analysisDescription: 'ddddd test update',
+        analysisParameters:{
+            "data":{
+                "cccc":["SRNA0004311","SRNA0004310","SRNA0004309","SRNA0004308"],
+                "dddd":["SRNA0004304","SRNA0004303","SRNA0004302"]
+            },
+            "ref":"dddd",
+            "method":"DESeq2",
+            "pvalue":"0.058",
+            "fdr":"0.09",
+            "fc":"3"
+        }
+    }
+### 1.2.3 成功时返回
+    {
+        header: 
+            {
+                message: "success", 
+                statusCode: 200
+            }
+    }
+	
 ### 2、RegulatorPathNet Visual
 ![image](https://github.com/wwlOath/MarkDownPhotos/blob/master/7.png?raw=true)
 ### 2.1.1 URL
