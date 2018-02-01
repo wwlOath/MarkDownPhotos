@@ -3,9 +3,9 @@
 
 ### 1、Dataset Survival Result List
 ![image](https://github.com/wwlOath/MarkDownPhotos/blob/master/2.png?raw=true)
-### 1.1、URL
+### 1.1.1、URL
     getDatasetSurvivalResult
-### 1.2、参数
+### 1.1.2、参数
     dataset_id: 'DWXSGC0176',
     geneSite: '',
     stype: 'gene',
@@ -18,7 +18,7 @@
     pvalue_filter: '<=',
     coef: '',
     coef_filter: '',
-### 1.3 成功时返回
+### 1.1.3 成功时返回
     {
         data: [
             ["DWXSGC0176", "MSRB1", "", "gene", "somatic", 1, 7, 0.00815097159350275, -22.0037111632697, 7],
@@ -28,7 +28,7 @@
         header: ["dataset_id","gene","site","stype","category","mut_number","non_mut_number","pvalue","coef","logrank_stat"],
         type: "success"
     }
-### 1.4 失败时返回
+### 1.1.4 失败时返回
     {
         type: 'nodata'
     }
@@ -83,9 +83,9 @@
     
 ### 1、RegulatorPathNet
 ![image](https://github.com/wwlOath/MarkDownPhotos/blob/master/6.png?raw=true)
-### 1.1 URL
+### 1.1.1 URL
     checkOutAnalysisStatusForAppRegulatorPathNet
-### 1.2 参数
+### 1.1.2 参数
     statusInfo:[
         {
             "analysisId":"6e8a0879-9e5d-48e1-9692-d34d2d9d1d4f",
@@ -98,7 +98,7 @@
             
         }
     ]
-### 1.3 成功时返回
+### 1.1.3 成功时返回
     {
         "msg": "success",
         "content":{
@@ -198,26 +198,55 @@
             ...
         ]
     }
-    
+### 3、Create new report
+![image](https://github.com/wwlOath/MarkDownPhotos/blob/master/18.png?raw=true)   
+
+### 3.1.1 URL
+    createNewAnalysisForRegulatorPathNet
+### 3.1.2 参数
+    appId: 'RegulatorPathNet',
+    appName: 'RegulatorPathNet',
+    analysisName: 'cancer report test',
+    analysisDescription: 'ddd',
+    analysisParameters: {
+        "data":{
+            "cc": ["SRNA0004310","SRNA0004309","SRNA0004308","SRNA0004307"],
+            "dd": ["SRNA0004305","SRNA0004304","SRNA0004303","SRNA0004302","SRNA0004300"]
+        },
+        "ref":"cc",
+        "method":"DESeq2",
+        "pvalue":"0.046",
+        "fdr":"0.09",
+        "fc":"3.9"
+    }
+### 3.1.3 成功时返回
+    {
+        header: 
+            {
+                message: "success", 
+                statusCode: 200
+            }
+    }
+
 ## 三、GExPattern app
 ![image](https://github.com/wwlOath/MarkDownPhotos/blob/master/8.png?raw=true)
 
 ### 1、GExPattern
 ![image](https://github.com/wwlOath/MarkDownPhotos/blob/master/9.png?raw=true)
-### 3.1.1 URL
+### 1.1.1 URL
     makeExpDataForHistogramPlotByGeneName
-### 3.1.2 参数
+### 1.1.2 参数
     geneSymbol: 'PTEN'
-### 3.1.3 成功时返回
+### 1.1.3 成功时返回
     {
         "specimenTypes": ["control","case"],
         "primaryTissueSite": ["Stomach","Colorectum","Colon","esophagus","Esophagus"],
         "expDataMatrix": [[5455,1447,1508,1741,733],[4797,1270,1917,1812,778]],
         "result": "success"
     }
-### 3.2.1 URL
+### 1.2.1 URL
     runGExPattern
-### 3.2.2 参数
+### 1.2.2 参数
     searchType: 'specimenId',
     specimenIds: 'SRNA0001085'
                  'SRNA0001094'
@@ -230,7 +259,7 @@
                     'AQP8'
                     'GUCA2B'
                     'CA4'
-### 3.2.3 成功时返回
+### 1.2.3 成功时返回
     {
         datamatrix: [
             ["3.700439718141092", "3.1699250014423126", "6.643856189774725", "4.700439718141093", "5.906890595608519", "8.618385502258606", "6.169925001442312", "9.751544059089097", "2.807354922057604", "5.169925001442312", "4.247927513443585", "4.08746284125034", "4.247927513443585", "5.20945336562895", "9.383704292474052", "8.519636252843213", "5.523561956057013", "2.0", "11.005624549193877", "10.64565843240871", "11.476239906323851", "10.928518375257891", "10.129283016944967", "11.338179249900112", "11.946540803893104", "10.755722153642283", "11.914011328541255", "12.202736043250168", "11.449664538476192", "11.413098984915264", "12.26532202423487", "11.32023644524165", "11.302067672526519", "12.105253779700885", "10.191059214531656", "12.477758266443887"],
@@ -249,9 +278,9 @@
 
 ### 1、OmicsFeatureViwewe
 ![image](https://github.com/wwlOath/MarkDownPhotos/blob/master/11.png?raw=true)
-### 4.1.1 URL
+### 1.1.1 URL
     queryExpressionDepth
-### 4.1.2 参数
+### 1.1.2 参数
     specimenIds:{
         "SRNA0003386": "",
         "SRNA0003387": "",
@@ -259,7 +288,7 @@
     },
     geneSymbol: 'TP53',
     tagFlag: false,
-### 4.1.3 成功时返回
+### 1.1.3 成功时返回
     {
         "header":{
             "message":"success",
@@ -278,11 +307,11 @@
             }
         ]
     }
-### 4.2.1 URL
+### 1.2.1 URL
     queryGeneExonsStructure
-### 4.2.2 参数
+### 1.2.2 参数
     geneSymbol: 'TP53'
-### 4.2.3 成功时返回
+### 1.2.3 成功时返回
     {
         header: {
             message: "success",
@@ -319,13 +348,13 @@
 
 ### 1、Cancer Report
 ![image](https://github.com/wwlOath/MarkDownPhotos/blob/master/13.png?raw=true)
-### 5.1 URL
+### 1.1.1 URL
     omicsPanCancerReport
-### 5.2 参数
+### 1.1.2 参数
     genes: 'PRIM2,PRKDC,ING3,TP53,AR,PIK3CA',
     specimens: '',
     time: Tue Jan 30 2018 14:14:31 GMT+0800 (中国标准时间)
-### 5.3 成功时返回
+### 1.1.3 成功时返回
     {
         data: [
             ["AR", "", "", "", "Y", "", "Y", "", "", "", "", "", "", "", "", "", "", "", "", 5, 5, "1.000", 5, 5, "1.000", 1, 5, "0.200", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 1, 14, "0.071", "", "", "", "", "", "", "", "", "", 12, 14, "0.857", 14, 14, "1.000", "", "", "", 1, 14, "0.071", 1, 14, "0.071", "", "", "", "", "", "", 1, 14, "0.071", "", "", "", "", "", "", 2, 18, "0.111", "", "", "", "", "", "", "", "", "", 10, 18, "0.556", 10, 18, "0.556", "", "", "", "", "", "", 1, 18, "0.056", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
@@ -342,12 +371,12 @@
 
 ### 1、Mutation Mapper
 ![image](https://github.com/wwlOath/MarkDownPhotos/blob/master/15.png?raw=true)
-### 6.1.1 URL
+### 1.1.1 URL
     askDataForMutationMapper
-### 6.1.2 参数
+### 1.1.2 参数
     geneName: 'PTEN',
     specimens: '',
-### 6.1.3 成功时返回
+### 1.1.3 成功时返回
     {
 	    "specimenChooseType": "all",
 	    "resultType": "success",
@@ -359,11 +388,11 @@
 		   ...
 		]
 	}
-### 6.2.1 URL
+### 1.2.1 URL
     getPfamSequence
-### 6.2.2 参数
+### 1.2.2 参数
     geneSymbol: 'PTEN'
-### 6.2.3 成功时返回
+### 1.2.3 成功时返回
     [{"length": 403,
 	  "regions": [{
 		  "modelStart": 59,
@@ -438,12 +467,12 @@
 	 ]
     }]
 
-### 6.3.1 URL
+### 1.3.1 URL
     get3dPdb
-### 6.3.2 参数
+### 1.3.2 参数
     uniprotId: 'PTEN_HUMAN',
     uniprotIds: 'PTEN_HUMAN',
-### 6.3.3 成功时返回
+### 1.3.3 成功时返回
     [
         {
         	"alignmentId": 3631206,
@@ -474,20 +503,20 @@
         ...
     ]
 
-### 6.4.1 URL
+### 1.4.1 URL
     get3dPdb
-### 6.4.2 参数
+### 1.4.2 参数
     uniprotId: 'PTEN_HUMAN',
     uniprotIds: 'PTEN_HUMAN',
     type: 'summary',
-### 6.4.3 成功时返回
+### 1.4.3 成功时返回
     {alignmentCount: 31}
 
-### 6.5.1 URL
+### 1.5.1 URL
     get3dPdb
-### 6.5.2 参数
+### 1.5.2 参数
     pdbIds: '1d5r,2kyl,4o1v,3v0g,3v0d,3v0g,3v0f,3v0h,3v0g,3v0g,3v0h,3v0d,3v0f,3v0j,3v0j,3awf,3awe,3awf,3awe,3awg,3awg,3awg,3v0e,3awe,3awf'
-### 6.5.3 成功时返回
+### 1.5.3 成功时返回
     {
         "1d5r": {
             "source": {
@@ -553,12 +582,12 @@
         ...
     }
 
-### 6.6.1 URL
+### 1.6.1 URL
     get3dPdb
-### 6.6.2 参数
+### 1.6.2 参数
     positions: 65,78,154,171
     alignments: 3631102,3631104,3631105,3631103,3631106,3631107,3631101
-### 6.6.3 成功时返回
+### 1.6.3 成功时返回
     {
         65: {
             pdbPos: 65
@@ -573,11 +602,11 @@
             pdbPos: 171
         }
     }
-### 6.7.1 URL
+### 1.7.1 URL
     designPrimerBySnv
-### 6.7.2 参数
+### 1.7.2 参数
     snv: 10:89623861:T:-
-### 6.7.3 成功时返回
+### 1.7.3 成功时返回
     {
         "msg": "success",
         "code": 0,
@@ -606,11 +635,11 @@
 ### 1、PathwayComparator
 ![image](https://github.com/wwlOath/MarkDownPhotos/blob/master/17.png?raw=true)
 
-### 7.1.1 URL
+### 1.1.1 URL
     getPathwayJsonData
-### 7.1.2 参数
+### 1.1.2 参数
     pathwayId: 'hsa05224'
-### 7.1.3 成功时返回
+### 1.1.3 成功时返回
     {
 	    "pathwayGeneSymbols": ",IGF1R,TCF7L1,FGF4,GRB2,FGF14,FGFR1,FGF13,WNT11,FGF10,HES5,NRAS,CDK6,WNT16,FGF5,WNT3A,FZD3,FGF1,FGF11,FGF23,LRP6,CCND1,FGF22,PIK3R5,NOTCH3,EGF,NOTCH4,KRAS,DLL1,FGF16,FZD1,AKT1,ESR2,TCF7,DLL3,FLT4,MAPK1,JAG1,WNT7A,FZD5,DVL2,FGF18,DVL3,AXIN2,PIK3R1,CSNK1A1L,FGF3,MYC,PIK3CG,PIK3CA,PIK3R2,APC,FZD10,HEYL,FZD8,AKT3,EGFR,JAG2,HRAS,WNT9A,HES1,SHC1,MAP2K2,LRP5,WNT5B,ERBB2,JUN,FZD6,NOTCH1,WNT5A,FGF6,WNT1,E2F2,BRAF,PGR,WNT2B,LEF1,FGF8,FZD4,ESR1,DVL1,FGF12,SP1,FGF7,TNFSF11,CDK4,PIK3CB,FRAT2,CTNNB1,BRCA2,KIT,RPS6KB2,RAF1,FGF9,TCF7L2,RPS6KB1,PTEN,CDKN1A,SOS2,NCOA3,SHC3,PIK3CD,ARAF,WNT7B,APC2,NOTCH2,RB1,FGF2,FZD2,BRCA1,WNT10A,MAP2K1,FZD7,FGF21,SOS1,WNT10B,CSNK1A1,WNT8A,AKT2,WNT9B,FGF19,WNT8B,WNT2,PIK3R3,E2F3,NFKB2,GSK3B,WNT6,E2F1,TP53,SHC2,WNT3,NCOA1,HEY2,FZD9,FOS,MTOR,MAPK3,IGF1,AXIN1,FGF20,FGF17,FRAT1,WNT4,SHC4,HEY1,DLL4,",
 	    "pathwayId": "hsa05224",
@@ -735,11 +764,11 @@
 	   ],
 	   "pathwayDrug": []
     }
-### 7.2.1 URL
+### 1.2.1 URL
     getPathwayGeneRelatedmiRNA
-### 7.2.2 参数
+### 1.2.2 参数
     pathwayId: 'hsa05224'
-### 7.2.3 成功时返回
+### 1.2.3 成功时返回
     {
         hsa-let-7a-5p: ["1021", "1026", "1869", "1870", "1956", "3265", "3845", "4609", "4893"],
         hsa-let-7b-5p: ["1021", "208", "3265", "3480", "4893", "595"],
@@ -752,11 +781,11 @@
         hsa-miR-7-5p: ["1956", "3480", "5293", "5294", "5894", "8503"],
         ...
     }
-### 7.3.1 URL
+### 1.3.1 URL
     getUserAccessableDataset
-### 7.3.2 参数
+### 1.3.2 参数
     无参数
-### 7.3.3 成功时返回
+### 1.3.3 成功时返回
     {
         "header": {
             "message": "success",
@@ -767,12 +796,12 @@
             "publicDataset": ["DRNASTAD0178", "DRNACC0160", "DRNACRC0077", "DRNACRC0150", "DRNAESAC0173", "DRNAESCC0172", "DWXSCRC0154", "DRNAESCC0162", "DRNAESCC0163", "DWXSGC0181", "DRNACRC0080", "DWXSCRC0108", "DWXSCRC0154_PC", "DWXSGC0176", "DWXSSTAD0179"]
         }
     }
-### 7.4.1 URL
+### 1.4.1 URL
     getPathwayGeneOdcInfo
-### 7.4.2 参数
+### 1.4.2 参数
     pathwayId: 'hsa05224',
     specimens: '',
-### 7.4.3 成功时返回
+### 1.4.3 成功时返回
     {
         WNT1： {
             entrezGeneId: '7471',
@@ -788,11 +817,11 @@
         },
         ...
     }
-### 7.5.1 URL
+### 1.5.1 URL
     getPathwayGeneInfo
-### 7.5.2 参数
+### 1.5.2 参数
     pathwayId: 'hsa05224',
-### 7.5.3 成功时返回
+### 1.5.3 成功时返回
     {
         182: {
             geneDescription: 'The jagged 1 protein encoded by JAG1 is the human homolog of the Drosophilia jagged protein.  Human jagged 1 is the ligand for the receptor notch 1, the latter a human homolog of the Drosophilia jagged receptor notch.  Mutations that alter the jagged 1 protein cause Alagille syndrome.  Jagged 1 signalling through notch 1 has also been shown to play a role in hematopoiesis. [provided by RefSeq, Jul 2008]',
@@ -817,11 +846,11 @@
         ...
     }
 
-### 7.6.1 URL
+### 1.6.1 URL
     getPathwayConsistentGeneRelations
-### 7.6.2 参数
+### 1.6.2 参数
     pathwayId: 'hsa05224',
-### 7.6.3 成功时返回
+### 1.6.3 成功时返回
     {
         hsa05224: [
             {
