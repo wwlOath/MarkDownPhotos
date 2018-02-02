@@ -911,3 +911,58 @@
             ...
         ]
     }
+    
+### 八、LiteratureMiner
+![image](https://github.com/wwlOath/MarkDownPhotos/blob/master/20.png?raw=true)
+
+### 1、LiteratureMiner
+![image](https://github.com/wwlOath/MarkDownPhotos/blob/master/21.png?raw=true)
+
+### 1.1.1 URL
+    queryFilteredConditions
+### 1.1.2 参数
+    无参数
+### 1.1.3 成功时返回
+    {
+        componentType: ["DI", "PW", "MU", "TA", "GE"]，
+        disease: ["colorectal_cancer", "gastric_cancer"]，
+        source: ["db", "re", "re2", "re3", "re4", "re5", "sent"],
+        type: "success"
+    }
+### 1.2.1 URL
+    literatureMinerSearch
+### 1.2.2 参数
+    source: 'db',
+    disease: 'colorectal_cancer',
+    componentTypes: 'DI',
+### 1.2.3 成功时返回
+    {
+        data: [
+            {
+               "citations":"16941501;15042511",
+               "component1Id":"C1837750",
+               "component1Name":"Oligodontia-Colorectal Cancer Syndrome",
+               "component1Type":"DI",
+               "component2Id":"C0009402",
+               "component2Name":"Colorectal Carcinoma",
+               "component2Type":"DI",
+               "disease":"colorectal_cancer",
+               "edgeWeight":"2",
+               "source":"db"
+            },
+            {
+               "citations":"16941501;15042511",
+               "component1Id":"C1837750",
+               "component1Name":"Oligodontia-Colorectal Cancer Syndrome",
+               "component1Type":"DI",
+               "component2Id":"C0000846",
+               "component2Name":"Agenesis",
+               "component2Type":"DI",
+               "disease":"colorectal_cancer",
+               "edgeWeight":"2",
+               "source":"db"
+            },
+            ...
+        ],
+        type: 'success',
+    }
